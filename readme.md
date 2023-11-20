@@ -44,12 +44,12 @@ sequenceDiagram
 
     B->>S: Saisir ISBN ou Titre
     alt ISBN fourni
-        S->>B: Vérifier ISBN Valide
+
         S->>B: Vérifier Existence ISBN
         alt ISBN invalide ou existant
             S-->>B: Afficher Messages d'Erreur
         else
-            B->>S: Fournir Détails
+            B->>S: Fournir Détails sur Livres
             B-->>S: Ajouter Livre sans ISBN
         end
 
